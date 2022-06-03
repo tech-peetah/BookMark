@@ -1,0 +1,53 @@
+:root{
+    /**All variables here**/
+
+    /**All CSS Properties**/
+
+    /**All FONT Properties**/
+    font-size: calc(0.5em + 1vw);
+    box-sizing: border-box;
+
+}
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+} 
+
+@media (min-width: 50em) {
+    :root{
+        font-size: 1.125em;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: .2em;
+}
+html::-webkit-scrollbar{
+    width: .2em;
+ }
+
+ html::-webkit-scrollbar-track{
+    background: transparent;
+ }
+
+ html::-webkit-scrollbar-thumb{
+    background-color: var(--soft-blue, blue);
+ }
+
+/*==== List reset ====*/
+ul{
+    list-style: none;
+}
+
+a{
+   text-decoration: none;
+   color: inherit;
+}
+
+img {
+   max-width: 100%;
+}
